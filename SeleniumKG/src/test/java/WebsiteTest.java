@@ -19,7 +19,7 @@ public class WebsiteTest extends SeleniumTestBase {
         System.out.println(faqPage.getCardLinks().size());
 
         // Print out link nr 2 href
-        System.out.println(faqPage.getCardLinks().get(1).getText());
+        System.out.println(faqPage.getCardLinks().get(1).getAttribute("href"));
 
         // Come up with 2 assertions for elements in the card
         assertEquals("false", faqPage.getFaqQuestion().getAttribute("aria-expanded"), "An answer should not be displayed");

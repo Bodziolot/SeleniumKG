@@ -1,5 +1,5 @@
 import org.example.base.SeleniumTestBase;
-import org.example.pageobjects.AspAccount;
+import org.example.pageobjects.AspAccountPage;
 import org.example.pageobjects.FaqPage;
 import org.junit.jupiter.api.Test;
 
@@ -30,7 +30,7 @@ public class WebsiteTest extends SeleniumTestBase {
         faqPage.getCardLinks().get(1).click();
 
         // Add assertion that you were redirected correctly
-        AspAccount aspAccount = new AspAccount(driver);
-        assertEquals("ASP account", aspAccount.getAspHeaderBy().getText());
+        AspAccountPage aspAccountPage = new AspAccountPage(driver);
+        assertEquals("ASP account", aspAccountPage.getAspHeaderBy().getText());
     }
 }

@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class AspAccount {
+public class AspAccountPage {
     private final By aspHeaderBy = By.xpath("//h1[contains(.,'ASP account')]");
     protected WebDriver driver;
 
-    public AspAccount(WebDriver driver) {
+    public AspAccountPage(WebDriver driver) {
         this.driver = driver;
     }
 
